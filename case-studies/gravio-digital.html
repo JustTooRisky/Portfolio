@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gravio Digital — Case Study · Emmanuel Ukaegbu</title>
+<meta name="description" content="Gravio Digital — a complete client acquisition system for Lagos law firms, built and operated by Emmanuel Ukaegbu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container inner">
+    <a class="wordmark" href="../index.html"><span class="mark">E</span>mmanuel Ukaegbu</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a class="nav-link" href="../index.html#work">Work</a>
+      <a class="nav-link" href="../index.html#about">About</a>
+      <a class="nav-link" href="../index.html#contact">Contact</a>
+      <a class="btn btn-primary btn-small" href="../index.html#contact">Hire Me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="container">
+      <p class="label eyebrow">Own business · Live system</p>
+      <h1>Gravio Digital: <em>a client acquisition system, built from scratch</em></h1>
+      <p class="lede">A complete client pipeline for Lagos law firms, from cold-call audit to signed engagement &mdash; built, fully operational, and live. The landing page is the front door; the system behind it is where the work happens.</p>
+      <div class="meta"><span>Live at graviodigital.com</span><span>Own business</span><span>Aug 2026</span></div>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://graviodigital.com/" target="_blank" rel="noopener">View live site ↗</a>
+        <a class="btn btn-ghost" href="../index.html#work">Back to work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <p class="label cs-kicker">Before</p>
+      <h2>What I set out to build, <em>and why a landing page alone wasn't enough</em></h2>
+      <p>Gravio Digital is a Lagos-based agency that helps law firms convert inbound leads into paying clients. The brief was mine: build a business that sells web services to the same legal agencies I'm now applying to. A landing page alone wouldn't do that. The business needed a system: a way to identify firms, audit their sites, start conversations, and close engagements without a sales team.</p>
+      <div class="before-grid">
+        <figure class="before-shot">
+          <img src="../images/dixon-thumb.webp" alt="System architecture – pipeline, playbook, observation framework (before)" width="1280" height="914" loading="lazy">
+          <figcaption><span>Before system design · no pipeline existed</span><span>Aug 2026</span></figcaption>
+        </figure>
+        <ol class="observations">
+          <li><strong>No pipeline.</strong> Without a systematic way to identify and contact target firms, outreach is random and unrepeatable.</li>
+          <li><strong>No audit method.</strong> "Your website needs work" isn't a conversation starter. The business needed a framework for evidence-based observations that justify professional outreach.</li>
+          <li><strong>No intake automation.</strong> A qualified lead hitting a generic contact form is revenue that disappears; the business needed a structured intake from day one.</li>
+          <li><strong>No proof.</strong> No live site to demonstrate capability. The landing page had to exist before any outreach could begin.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <p class="label cs-kicker">Approach</p>
+      <h2>Build the system first, <em>then the page</em></h2>
+      <div class="approach-quote">
+        <p><em>“I started with the storefront, then built the machine behind it so the offer could evolve from a general agency into a specialized legal-focused practice.”</em></p>
+      </div>
+      <p>The decision was to treat the business itself as the project. Every component had to earn its place:</p>
+      <ul class="approach-list">
+        <li>A Dream 50 CRM tracking 50 target Lagos firms with contact details, observation notes, and call status.</li>
+        <li>A Python audit pipeline (Firecrawl + Playwright + vision LLM) that crawls each firm's site, captures screenshots, and produces scored observations (192 across 46 firms in the first run).</li>
+        <li>An observation pyramid ranking issues by wedge strength: contact &amp; enquiry at the top, technical performance at the bottom, so every cold call starts with something the firm's decision-maker would actually care about.</li>
+        <li>A cold-call playbook built on consultative, observation-first principles (NEPQ-inspired, RPC Rule 39-conscious) designed to earn the next conversation, not close on the first call.</li>
+        <li>An investigation ladder with five thinking stages (ownership, process, awareness, evidence, future) that turn a cold call into a discovery conversation.</li>
+        <li>A fulfillment automation system for post-engagement delivery.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cs-section" id="after">
+    <div class="container">
+      <p class="label cs-kicker">After: the live system</p>
+      <h2>What runs today, <em>end to end</em></h2>
+      <p>Below is a distilled view of the system. The landing page converts. The pipeline identifies and audits. The playbook guides conversations. Each component is operational, not a mockup.</p>
+      <div class="after-demo">
+        <div class="demo-bar"><span><span class="dot"></span>Live system · Gravio Digital</span><span>4 components · 46 firms audited</span></div>
+        <div class="demo-body">
+          <div class="demo-grid">
+            <article class="demo-card">
+              <!--Placeholder. Replace with live interactive/scrollable preview of https://graviodigital.com.-->
+              <h4>The landing page</h4>
+              <p>graviodigital.com is a single-page sales mechanism: problem framing, offer stack (6 components + 2 bonuses), performance-based pricing (₦300k setup + ₦450k after 3 qualified leads), 90-day guarantee. Hand-coded HTML/CSS, no builder.</p>
+            </article>
+            <article class="demo-card">
+              <h4>The audit pipeline</h4>
+              <p>Python + Firecrawl + Playwright + Ollama (gemma4:31b). Maps each firm's site, selects relevant pages, captures screenshots, and produces scored JSON observations with wedge scores, evidence ladder placement, and conversation starters.</p>
+            </article>
+            <article class="demo-card">
+              <h4>The cold-call playbook</h4>
+              <p>Observation-first framework: one observation, one consequence, one question, one next step. 11 delivery principles. Designed for Nigerian law firms, RPC-conscious. Earns the next conversation, not the close.</p>
+            </article>
+            <article class="demo-card">
+              <h4>The observation pyramid</h4>
+              <p>10 categories ranked by wedge strength. Contact &amp; enquiry and trust &amp; credibility at the top; technical performance and tone at the bottom. Every observation scored on 5 criteria: factual, visible, relevant, explainable, creates curiosity.</p>
+            </article>
+          </div>
+          <div class="demo-actions">
+            <a class="btn btn-primary" href="https://graviodigital.com/" target="_blank" rel="noopener">View live site ↗</a>
+            <a class="btn btn-ghost" href="../index.html#work">View Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <p class="label cs-kicker">Implementation</p>
+      <h2>How each piece was <em>built</em></h2>
+      <div class="impl-grid">
+        <div class="impl-card">
+          <h3>The pipeline</h3>
+          <ul>
+            <li>Python orchestration (<code>main.py</code>) &mdash; runs the audit with resumable state (<code>state.json</code>)</li>
+            <li>Firecrawl/Crawl4AI for site mapping and markdown extraction</li>
+            <li>Playwright for multi-page screenshots</li>
+            <li>Ollama Cloud (<code>gemma4:31b</code>) for vision-based observation scoring</li>
+            <li>Chunked processing: images grouped in sets of 4 to stay within context limits</li>
+          </ul>
+        </div>
+        <div class="impl-card">
+          <h3>The playbook</h3>
+          <ul>
+            <li>V4 cold-call framework with 11 delivery principles</li>
+            <li>Four-point rule: one observation, one consequence, one question, one next step</li>
+            <li>Observation pyramid with wedge scoring (8–10 excellent, 6–7 good, 4–5 weak)</li>
+            <li>Investigation ladder: 5 thinking stages, not 5 mandatory questions</li>
+            <li>Rule 39 RPC-conscious language throughout</li>
+          </ul>
+        </div>
+        <div class="impl-card">
+          <h3>The landing page</h3>
+          <ul>
+            <li>Hand-coded HTML5, CSS custom properties, vanilla JS</li>
+            <li>Single accent green on ivory paper, Wittgenstein + Alegreya</li>
+            <li>Offer stack built with Alex Hormozi's value equation</li>
+            <li>Performance-based pricing: 90-day guarantee, results-triggered balance</li>
+          </ul>
+        </div>
+        <div class="impl-card">
+          <h3>Outreach at scale</h3>
+          <ul>
+            <li>Dream 50 CRM tracking target firms</li>
+            <li>50 firms loaded, 46 successfully audited, 4 permanently skipped</li>
+            <li>192 total observations, average 4.2 per firm</li>
+            <li>A/B model comparison archived for future pipeline runs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proof-box">
+        <p><strong>Live proof</strong>: the landing page is live, and the back‑end has already audited 46 firms, generating 192 actionable observations.</p>
+        <div class="proof-metrics">
+          <div class="proof-metric"><strong>46</strong><span>Firms audited</span></div>
+          <div class="proof-metric"><strong>192</strong><span>Observations</span></div>
+          <div class="proof-metric"><strong>4.2</strong><span>Avg per firm</span></div>
+          <div class="proof-metric"><strong>0</strong><span>Corrupt files</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cs-nav container" aria-label="Case study navigation">
+    <a href="../index.html#work">← Back to Portfolio</a>
+    <a href="bam-and-gad.html">Next: Bam &amp; Gad Solicitors →</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container inner">
+    <p>© 2026 Emmanuel Ukaegbu. Own business: a client‑acquisition system built & operated by the author.</p>
+    <nav aria-label="Footer"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav>
+  </div>
+</footer>
+</body>
+</html>

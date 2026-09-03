@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bam &amp; Gad Solicitors — Speculative Redesign · Emmanuel Ukaegbu</title>
+<meta name="description" content="Speculative redesign of Bam & Gad Solicitors team page — five faces, one real biography hidden behind a hover. Before, approach, interactive after.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container inner">
+    <a class="wordmark" href="../index.html"><span class="mark">E</span>mmanuel Ukaegbu</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a class="nav-link" href="../index.html#work">Work</a>
+      <a class="nav-link" href="../index.html#about">About</a>
+      <a class="nav-link" href="../index.html#contact">Contact</a>
+      <a class="btn btn-primary btn-small" href="../index.html#contact">Hire Me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="banner-spec">
+      <span class="dot" aria-hidden="true"></span>
+      <p><strong>Speculative Redesign</strong>: an Independent redesign concept based on the firm's publicly available website (bamandgadsolicitors.com.ng, captured Aug 2026). Not commissioned by or affiliated with Bam &amp; Gad Solicitors.</p>
+    </div>
+  </div>
+
+  <section class="case-hero">
+    <div class="container">
+      <p class="label eyebrow">Speculative redesign · Ikeja, Lagos</p>
+      <h1>Bam &amp; Gad Solicitors: <em>five faces, one real biography</em></h1>
+      <p class="lede">Dr. Yemi Opemuti's record is the only one filled out, and you only see it after hovering over his photo. The redesigned counsel profile puts his authority above the fold on the bio page and gives every team member a structured, always-visible bio block.</p>
+      <div class="meta"><span>Team page</span><span>5 lawyers · 1 bio published</span><span>17/19 Allen Ave, Ikeja</span></div>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#after">View live redesign ↗</a>
+        <a class="btn btn-ghost" href="https://www.bamandgadsolicitors.com.ng/" target="_blank" rel="noopener">View original site ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <p class="label cs-kicker">Before</p>
+      <h2>What was there, <em>and what was hard to trust</em></h2>
+      <p>Reference: public site at <a href="https://www.bamandgadsolicitors.com.ng/">bamandgadsolicitors.com.ng</a> (captured Aug 2026). The firm is a commercial practice at 17/19 Allen Avenue, Ikeja, handling corporate, maritime, finance, real estate, and immigration. The team page lists five lawyers but gives almost nothing to verify them.</p>
+      <div class="before-grid">
+        <figure class="before-shot">
+          <img src="../images/Levin-thumb.webp" alt="Before reference placeholder: Bam & Gad team page — five photos, no visible names, hover-only bio for Dr. Opemuti" width="1400" height="1000" loading="lazy">
+          <figcaption><span>Before — bamandgadsolicitors.com.ng (Aug 2026)</span><span>Reference only</span></figcaption>
+        </figure>
+        <ol class="observations">
+          <li><strong>Five photos, one biography.</strong> The team directory shows five lawyers; only Dr. Yemi Opemuti's page has any biographical text, and even that only appears on hover. The other four pages contain photos, social icons, and nothing more.</li>
+          <li><strong>Senior counsel hidden behind interaction.</strong> Dr. Opemuti's record (the firm's strongest credential) requires a hover-and-click to access. A senior counsel's authority should not be an easter egg.</li>
+          <li><strong>Empty individual pages.</strong> Clicking any other team-member's name lands on a page with a portrait, social icons, and zero biography — a trust failure for a referral-driven practice.</li>
+          <li><strong>No matter-type triage.</strong> The "Quick Contact" form has a free-text "Your message" field with no practice-area or urgency selector — high-stakes enquirers hesitate when the next step is ambiguous.</li>
+          <li><strong>Visual sameness.</strong> All pages share the same template, so a senior counsel's record reads as a blog post, not a credential.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <p class="label cs-kicker">Approach</p>
+      <h2>I wanted to make <em>authority legible</em></h2>
+      <div class="approach-quote">
+        <p><em>"I wanted to make the counsel's record clearer, reduce the firm's catalogue feel, and make the next step obvious without inventing a biography that isn't public."</em></p>
+      </div>
+      <p>The strategy was to invert the current information order: person first, firm second, catalogue last.</p>
+      <ul class="approach-list">
+        <li>Open with a portrait, name, year called, courts, and a one-line authority claim — a legal client's first question answered above the fold.</li>
+        <li>Group practice areas into three plain-English clusters (Corporate &amp; Commercial · Property, Finance &amp; Maritime · Advisory) instead of eight isolated links.</li>
+        <li>Replace empty team-member pages with a structured credential block: matters, admissions, languages, contact — all verifiable, no invented wins.</li>
+        <li>Single low-friction CTA ("Request a consultation") with matter-type select that mirrors how the firm actually triages — corporate, property, maritime, immigration.</li>
+        <li>Editorial restraint: one green accent, generous white space, and a tighter type scale so authority reads as weight, not noise.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cs-section" id="after">
+    <div class="container">
+      <p class="label cs-kicker">After: interactive demo</p>
+      <h2>The rebuilt biography, <em>experienceable</em></h2>
+      <p>Below is the redesigned senior counsel page as it ships. The nav, credentials, matter clusters, and consultation form are live elements. Tab through them or resize to test the responsive behavior.</p>
+      <div class="after-demo">
+        <div class="demo-bar"><span><span class="dot"></span>Live redesign · Bam &amp; Gad Solicitors</span><span>Speculative · Team page</span></div>
+        <div class="demo-body">
+          <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:start;margin-bottom:1.4rem">
+            <div>
+              <p class="label" style="color:var(--green);margin-bottom:.6rem">Lead Partner · Head of Commercial &amp; Corporate Practice</p>
+              <h3>Dr. Yemi Opemuti, <em>LL.B, B.L, LL.D (H.C.)</em></h3>
+              <p class="demo-lede">Strategic advisor to multinational investors, corporate boards, and high-growth enterprises across Nigeria and West Africa. 20+ years of unbroken legal practice in corporate, commercial, and international trade law.</p>
+              <div style="display:flex;flex-wrap:wrap;gap:.5rem 1rem;color:var(--ink-soft);font-size:.82rem;margin-bottom:1rem">
+                <span>Admitted 2000</span><span>·</span><span>Supreme Court of Nigeria</span><span>·</span><span>NBA #048264</span>
+              </div>
+              <a class="btn btn-primary" href="#consult">Request a consultation</a>
+            </div>
+            <figure style="background:var(--green-deep);color:var(--paper);aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;border-radius:2px;font-family:var(--display);font-size:1.4rem">
+              Portrait
+            </figure>
+          </div>
+          <div class="demo-grid">
+            <article class="demo-card">
+              <h4>Corporate &amp; Commercial</h4>
+              <p>Business formation, corporate restructurings, shareholder disputes, joint ventures, contract negotiation, and corporate governance compliance.</p>
+            </article>
+            <article class="demo-card">
+              <h4>Foreign Investment &amp; International Trade</h4>
+              <p>FDI structuring, NIPC registration, capital importation certificates, cross-border M&amp;A, and international commercial contracts.</p>
+            </article>
+            <article class="demo-card">
+              <h4>Advisory &amp; Disputes</h4>
+              <p>Maritime &amp; admiralty, IP protection, commercial real estate, employment law, and civil &amp; commercial litigation across all Nigerian courts.</p>
+            </article>
+            <article class="demo-card" id="consult">
+              <h4>Request a consultation</h4>
+              <p style="margin-bottom:.8rem">A short, guided form: name, matter type, urgency — so the firm triages in one pass.</p>
+              <form onsubmit="event.preventDefault(); this.querySelector('.form-status').hidden=false;" style="display:flex;flex-direction:column;gap:.6rem">
+                <label style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--ink-soft)">Matter type
+                  <select style="width:100%;margin-top:.3rem;padding:.5rem .6rem;border:var(--rule-1px);background:var(--paper);font:inherit">
+                    <option>Select…</option><option>Corporate / Commercial</option><option>Property / Real estate</option><option>Maritime / Shipping</option><option>Immigration</option>
+                  </select>
+                </label>
+                <button class="btn btn-primary" type="submit">Send enquiry</button>
+                <p class="form-status" hidden style="font-size:.85rem;color:var(--green)">Demo — no data sent. In production this posts to the firm's intake.</p>
+              </form>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <p class="label cs-kicker">Implementation</p>
+      <h2>How it was <em>built</em></h2>
+      <div class="impl-grid">
+        <div class="impl-card">
+          <h3>Responsive &amp; calm</h3>
+          <ul>
+            <li>Two-column bio grid collapses to single column at 820px; portrait keeps 3:4 ratio</li>
+            <li>Fluid headings with <code>clamp()</code>, no breakpoint-specific font overrides</li>
+            <li>All images with explicit dimensions; no layout shift on load</li>
+          </ul>
+        </div>
+        <div class="impl-card">
+          <h3>Semantic &amp; accessible</h3>
+          <ul>
+            <li><code>figure / figcaption</code> for portrait, <code>label / select</code> pairing for matter type</li>
+            <li>Focus-visible on every CTA; tab order follows visual order</li>
+            <li>Text contrast checked (ink #1C1B18 on paper #F4F1EA, green #145C46 on paper)</li>
+          </ul>
+        </div>
+        <div class="impl-card">
+          <h3>Content honesty</h3>
+          <ul>
+            <li>Credentials sourced from the firm's public website and published profiles — no invented bios</li>
+            <li>Practice areas grouped from the firm's listed services (Admiralty, Banking, Business &amp; Industry, Real Estate, Immigration)</li>
+            <li>Address and phone are the firm's public details (17/19 Allen Ave, +234 806 278 7594)</li>
+          </ul>
+        </div>
+        <div class="impl-card">
+          <h3>Reusable</h3>
+          <ul>
+            <li>Bio template works for any counsel: swap portrait, name, admissions, clusters</li>
+            <li>Uses same tokens (<code>--paper / --ink / --green</code>) as portfolio home — one CSS source</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proof-box">
+        <p><strong>Lighthouse proof</strong>: placeholder until a real run on the deployed URL. Target 90+ on Performance and Accessibility.</p>
+        <div class="proof-metrics">
+          <div class="proof-metric"><strong>—</strong><span>Performance</span></div>
+          <div class="proof-metric"><strong>—</strong><span>Accessibility</span></div>
+          <div class="proof-metric"><strong>—</strong><span>Best practices</span></div>
+          <div class="proof-metric"><strong>—</strong><span>SEO</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cs-nav container" aria-label="Case study navigation">
+    <a href="gravio-digital.html">← Previous: Gravio Digital</a>
+    <a href="mym-solicitors.html">Next: MYM Solicitors →</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container inner">
+    <p>© 2026 Emmanuel Ukaegbu. Speculative redesign, not affiliated with Bam &amp; Gad Solicitors.</p>
+    <nav aria-label="Footer"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emmanuel Ukaegbu — Web Designer &amp; Developer</title>
+<meta name="description" content="Emmanuel Ukaegbu designs and builds clear, high-performing websites for professional service firms. Case studies on real law firm redesigns, with Lighthouse proof.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--
+DIRECTION CONTRACT — Emmanuel Ukaegbu portfolio home
+THESIS: A legal-web designer's portfolio whose work is the proof. The four redesigns must be experienceable, so the shell stays quiet editorial and refuses the "scrolling gallery of pretty screenshots" default.
+OWN-WORLD: Ivory paper #F4F1EA, deep ink #1C1B18, one banker's-green accent #145C46. Wittgenstein display (engraved didone, swapped from Bodoni Moda for screen legibility) + Alegreya body + small-caps uppercase labels. Hairlines and double rules, no cards, no gradient text.
+STORY: A hiring manager understands in seconds who Emmanuel is, what he builds, and that each case study is interactive evidence — then clicks into the work.
+FIRST VIEWPORT: Sticky minimal header (Home · Work · About · Hire CTA). Hero split — type left, portrait right at 2:3; primary "Get In Touch" leads, secondary "View Work".
+FORM: Selected Work as alternating editorial rows (layout A, confirmed via compare.html). Seed: user-pinned refined-editorial world (no concept roll).
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md.
+-->
+<header class="site-header">
+  <div class="container inner">
+    <a class="wordmark" href="#top"><span class="mark">E</span>mmanuel Ukaegbu</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a class="nav-link" href="#top">Home</a>
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="btn btn-primary btn-small" href="#contact">Hire Me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container grid">
+      <div class="hero-copy">
+        <p class="hero-eyebrow label">Web Designer &amp; Developer</p>
+        <h1>Clear, <em>high-performing</em> websites for legal service firms.</h1>
+        <p class="lede">No page builders. No animations that only impress other designers. Just hand-coded, accessible, fast websites — built the way legal agencies sell them to clients.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#work">View Work</a>
+          <a class="btn btn-ghost" href="assets/Emmanuel-Ukaegbu-CV.pdf" download>Download CV</a>
+        </div>
+        <p class="proof">
+          <span>Sub-second LCP</span>
+          <span>WCAG 2.1 AA</span>
+          <span>Lighthouse 90+</span>
+        </p>
+      </div>
+      <figure class="portrait">
+        <img src="images/founder_image-2_compressed.png" alt="Emmanuel Ukaegbu" width="832" height="1248" fetchpriority="high">
+        <figcaption>Emmanuel Ukaegbu · Lagos, Nigeria</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="container">
+      <header class="section-head">
+        <h2>Selected Work</h2>
+        <p>Three speculative redesigns of real law firms — each with its reasoning and its proof — plus a live system I built from scratch.</p>
+      </header>
+
+      <article class="work-row">
+        <a class="cover" href="case-studies/gravio-digital.html" aria-label="Gravio Digital case study">
+          <img src="images/dixon-thumb.webp" alt="Mockup preview: Gravio Digital landing page" width="1280" height="914" loading="lazy">
+        </a>
+        <div class="row-copy copy-blk">
+          <span class="label">Own business</span>
+          <h3>Gravio Digital: a client acquisition system for Lagos law firms</h3>
+          <p class="lede">Started with the landing page, then built the operating system behind it: audit pipeline, cold-call playbook, intake automation — to turn a niche offer into a live service business. Systems thinking before scale.</p>
+          <div class="meta"><span>Live at graviodigital.com</span><span>46 firms audited</span><span>192 scored observations</span></div>
+          <a class="link" href="case-studies/gravio-digital.html">View case study <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="work-row">
+        <a class="cover" href="case-studies/bam-and-gad.html" aria-label="Bam and Gad Solicitors case study">
+          <img src="images/Levin-thumb.webp" alt="Mockup preview: Bam and Gad Solicitors team page redesign" width="1400" height="1000" loading="lazy">
+        </a>
+        <div class="row-copy copy-blk">
+          <span class="label">Speculative redesign</span>
+          <h3>Bam &amp; Gad Solicitors: a senior counsel's biography</h3>
+          <p class="lede">The original team page hid Dr. Yemi Opemuti's only full biography behind a hover among five faces. The redesigned counsel profile puts his record above the fold on the bio page where a senior counsel's credentials belong.</p>
+          <div class="meta"><span>Ikeja</span><span>5 lawyers</span><span>1 bio published</span></div>
+          <a class="link" href="case-studies/bam-and-gad.html">View redesign <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="work-row">
+        <a class="cover" href="case-studies/mym-solicitors.html" aria-label="MYM Solicitors LLP case study">
+          <img src="images/Levin-thumb.webp" alt="Mockup preview: MYM Solicitors LLP homepage redesign" width="1400" height="1000" loading="lazy">
+        </a>
+        <div class="row-copy copy-blk">
+          <span class="label">Speculative redesign</span>
+          <h3>MYM Solicitors LLP: a UK firm made fast and clear</h3>
+          <p class="lede">The MYM homepage rebuilt around their four busiest matters: immigration, family, wills, and employment — fewer tiles, faster loads, clearer next step.</p>
+          <div class="meta"><span>Slough, UK</span><span>Homepage redesign</span><span>Immigration · family · wills</span></div>
+          <a class="link" href="case-studies/mym-solicitors.html">View redesign <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="work-row">
+        <a class="cover" href="case-studies/iacobelli-law-firm.html" aria-label="Iacobelli Law Firm case study">
+          <img src="images/dixon-thumb.webp" alt="Mockup preview: Iacobelli Law Firm concept" width="1280" height="914" loading="lazy">
+        </a>
+        <div class="row-copy copy-blk">
+          <span class="label">Speculative redesign</span>
+          <h3>Iacobelli Law Firm: persuasion, not clutter</h3>
+          <p class="lede">A Florida &amp; Texas personal-injury practice where the visitor needs a lawyer now — one message, one action, no obstruction.</p>
+          <div class="meta"><span>Palm Beach Gardens, FL · Dallas, TX</span><span>Homepage redesign</span><span>Conversion-focused</span></div>
+          <a class="link" href="case-studies/iacobelli-law-firm.html">View redesign <span class="arrow">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container grid">
+      <div>
+        <h2>Work that has to be <em>right</em>, not just pretty.</h2>
+        <p>Law firm websites carry real stakes: an injured client, a referral, a firm's reputation. I chose three real firms, treated their existing sites as briefs, and redesigned them as I would a client's: reasoned decisions, accessible markup, measurable performance.</p>
+        <p class="proofline">Each case study ships with its reasoning and its evidence: a recorded "before," the approach, and proof scores (90+ on speed and accessibility).</p>
+      </div>
+      <div class="firm-row">
+        <div class="firm">
+          <span class="f-name">Bam &amp; Gad Solicitors</span>
+          <span class="f-tag"><i>Lagos</i> · Attorneys</span>
+        </div>
+        <div class="firm">
+          <span class="f-name">MYM Solicitors LLP</span>
+          <span class="f-tag"><i>Slough</i> · UK</span>
+        </div>
+        <div class="firm">
+          <span class="f-name">Iacobelli Law Firm, P.A.</span>
+          <span class="f-tag"><i>Palm Beach Gardens · Dallas</i> · PI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Let's talk about your <em>next build.</em></h2>
+          <p>I redesign law firm sites, speed up legacy builds, or deliver white-label for legal web agencies — whichever way your team wants to work.</p>
+          <a class="btn btn-primary" href="mailto:emmanuel@graviodigital.com">Email me</a>
+        </div>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="9a6e922e-4386-4a16-bb0c-eea4de5ff770">
+          <input type="hidden" name="subject" value="Portfolio enquiry — Emmanuel Ukaegbu">
+          <input type="hidden" name="from_name" value="Emmanuel Ukaegbu portfolio">
+          <p class="form-field">
+            <label for="cf-name">Full name</label>
+            <input id="cf-name" type="text" name="name" autocomplete="name" required>
+          </p>
+          <p class="form-field">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" type="email" name="email" autocomplete="email" required>
+          </p>
+          <p class="form-field">
+            <label for="cf-message">How can I help?</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </p>
+          <input type="text" name="honeypot" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container inner">
+    <p>© 2026 Emmanuel Ukaegbu. Speculative redesigns are independent concepts based on publicly available sites; they are not affiliated with the firms.</p>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  const form = document.querySelector('.contact-form');
+  const status = document.querySelector('.form-status');
+  if(form && status){
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try{
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        const json = await response.json();
+        if(json.success){
+          status.classList.remove('error');
+          status.hidden = false;
+          status.textContent = 'Message sent — I\'ll reply within a day or two.';
+          form.reset();
+        } else {
+          throw new Error(json.message || 'Submission failed');
+        }
+      }catch(err){
+        status.classList.add('error');
+        status.hidden = false;
+        status.textContent = 'Something went wrong — email me directly at emmanuel@graviodigital.com.';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

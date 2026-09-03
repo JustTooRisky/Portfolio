@@ -1,0 +1,140 @@
+/* Case study — extends public.html/styles.css tokens, no build step */
+:root{
+  --paper:#F4F1EA;
+  --paper-raised:#FBF9F4;
+  --ink:#1C1B18;
+  --ink-soft:#56534A;
+  --green:#145C46;
+  --green-deep:#0E4435;
+  --hairline:#D9D4C6;
+  --hairline-strong:#C9C3B2;
+  --display:"Wittgenstein","Times New Roman",Georgia,serif;
+  --body:"Alegreya",Georgia,serif;
+  --rule-1px:1px solid var(--hairline);
+  --maxw:76rem;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--green);color:var(--paper)}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+img{display:block;max-width:100%}
+a{color:inherit}
+.container{max-width:var(--maxw);margin:0 auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.label{font-family:var(--body);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+
+/* header — reuse */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(244,241,234,.92);backdrop-filter:blur(8px);border-bottom:var(--rule-1px)}
+.site-header .inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.95rem}
+.wordmark{font-family:var(--display);font-size:1.15rem;font-weight:600;letter-spacing:.01em;text-decoration:none;color:var(--ink)}
+.wordmark .mark{color:var(--green);/*font-style:italic;*/font-weight:500;margin-right:.12rem;}
+.header-nav{display:flex;align-items:center;gap:1.4rem}
+.header-nav a.nav-link{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--ink-soft);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:.15rem}
+.header-nav a.nav-link:hover{color:var(--green);border-bottom-color:var(--green)}
+.btn{display:inline-block;font-family:var(--body);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:.72rem 1.4rem;border-radius:2px;text-decoration:none;border:1px solid transparent;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.btn-primary{background:var(--green);color:var(--paper)}
+.btn-primary:hover{background:var(--green-deep)}
+.btn-ghost{border-color:var(--hairline-strong);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);background:var(--paper-raised)}
+.btn-small{padding:.5rem 1rem;font-size:.76rem}
+
+/* speculative banner */
+.banner-spec{border:1px solid var(--hairline-strong);background:var(--paper-raised);padding:.9rem 1.1rem;display:flex;gap:.8rem;align-items:flex-start;margin-block:1.25rem}
+.banner-spec .dot{flex:0 0 .55rem;height:.55rem;margin-top:.5rem;background:var(--green);border-radius:50%}
+.banner-spec p{font-size:.85rem;color:var(--ink-soft);line-height:1.5}
+.banner-spec strong{color:var(--ink);letter-spacing:.06em;text-transform:uppercase;font-size:.72rem}
+
+/* case hero */
+.case-hero{padding-block:clamp(2.5rem,6vw,4.5rem);border-bottom:3px double var(--ink)}
+.case-hero .eyebrow{color:var(--green);margin-bottom:.9rem;display:inline-flex;align-items:center;gap:.55rem}
+.case-hero .eyebrow::before{content:"";width:.5rem;height:.5rem;background:var(--green);border-radius:50%}
+.case-hero h1{font-family:var(--display);font-weight:600;font-size:clamp(2rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.015em;margin-bottom:1rem}
+.case-hero h1 em{font-style:italic;font-weight:500;color:var(--green)}
+.case-hero .lede{color:var(--ink-soft);font-size:clamp(1.05rem,1.5vw,1.2rem);max-width:62ch;margin-bottom:1.4rem}
+.case-hero .meta{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;color:var(--ink-soft);font-size:.8rem;margin-bottom:1.6rem}
+.case-hero .meta span{display:inline-flex;align-items:center;gap:.45rem}
+.case-hero .meta span::before{content:"—";color:var(--hairline-strong)}
+.case-hero .ctas{display:flex;flex-wrap:wrap;gap:.9rem}
+
+/* sections */
+.cs-section{padding-block:clamp(2.5rem,5vw,4rem);border-bottom:var(--rule-1px)}
+.cs-section:last-of-type{border-bottom:none}
+.cs-kicker{color:var(--green);margin-bottom:.6rem}
+.cs-section h2{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.08;letter-spacing:-.01em;margin-bottom:1rem}
+.cs-section h2 em{font-style:italic;font-weight:500}
+.cs-section p{color:var(--ink-soft);max-width:66ch;margin-bottom:1rem}
+.cs-section p strong{color:var(--ink)}
+
+/* before */
+.before-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.5rem,4vw,3rem);align-items:start;margin-top:1.4rem}
+.before-shot{border:var(--rule-1px);background:var(--paper-raised);padding:.6rem}
+.before-shot img{width:100%;height:auto;border:var(--rule-1px)}
+.before-shot figcaption{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:.6rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.observations{list-style:none;display:flex;flex-direction:column;gap:1rem}
+.observations li{padding-left:1.4rem;position:relative;color:var(--ink-soft);max-width:62ch}
+.observations li::before{content:counter(obs);counter-increment:obs;position:absolute;left:0;top:.15rem;font-family:var(--display);font-weight:600;color:var(--green);font-size:.9rem}
+.observations{counter-reset:obs}
+.observations li strong{color:var(--ink)}
+
+/* approach */
+.approach-quote{border-left:3px solid var(--green);padding-left:1.25rem;margin:1.4rem 0;max-width:62ch}
+.approach-quote p{color:var(--ink);font-size:1.08rem;line-height:1.6;margin:0}
+.approach-quote p em{color:var(--green);font-style:italic}
+.approach-list{margin-top:1.2rem;list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.approach-list li{padding-left:1.2rem;position:relative;color:var(--ink-soft)}
+.approach-list li::before{content:"—";position:absolute;left:0;color:var(--hairline-strong)}
+
+/* after — interactive demo */
+.after-demo{margin-top:1.6rem;border:var(--rule-1px);background:var(--paper-raised);overflow:hidden}
+.after-demo .demo-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 1rem;border-bottom:var(--rule-1px);background:var(--paper);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+.after-demo .demo-bar span{display:inline-flex;align-items:center;gap:.5rem}
+.after-demo .demo-bar .dot{width:.5rem;height:.5rem;background:var(--green);border-radius:50%}
+.demo-body{padding:clamp(1.25rem,3vw,2rem)}
+.demo-body h3{font-family:var(--display);font-weight:600;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.08;margin-bottom:.8rem}
+.demo-body h3 em{font-style:italic;font-weight:500;color:var(--green)}
+.demo-body .demo-lede{color:var(--ink-soft);max-width:62ch;margin-bottom:1.4rem}
+.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.4rem}
+.demo-card{border:var(--rule-1px);background:var(--paper);padding:1.1rem}
+.demo-card h4{font-family:var(--display);font-size:1.05rem;font-weight:600;margin-bottom:.4rem}
+.demo-card p{font-size:.9rem;margin:0}
+.demo-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.2rem}
+
+/* implementation */
+.impl-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.25rem,3vw,2rem);margin-top:1.2rem}
+.impl-card{border:var(--rule-1px);background:var(--paper-raised);padding:1.1rem 1.2rem}
+.impl-card h3{font-family:var(--display);font-size:1.05rem;font-weight:600;margin-bottom:.5rem}
+.impl-card ul{list-style:none;display:flex;flex-direction:column;gap:.35rem;color:var(--ink-soft);font-size:.9rem}
+.impl-card ul li{padding-left:1rem;position:relative}
+.impl-card ul li::before{content:"—";position:absolute;left:0;color:var(--hairline-strong)}
+
+/* proof */
+.proof-box{border:1px dashed var(--hairline-strong);background:var(--paper-raised);padding:1.25rem;margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.proof-box p{margin:0;font-size:.9rem;max-width:60ch}
+.proof-metrics{display:flex;gap:.6rem;flex-wrap:wrap}
+.proof-metric{border:var(--rule-1px);background:var(--paper);padding:.6rem .9rem;text-align:center;min-width:5.5rem}
+.proof-metric strong{display:block;font-family:var(--display);font-size:1.35rem;color:var(--green);line-height:1}
+.proof-metric span{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+
+/* insights placeholder (WP deferred) */
+.insights-placeholder{border:var(--rule-1px);background:var(--paper-raised);padding:1.25rem;margin-top:1.4rem}
+.insights-placeholder h3{font-family:var(--display);font-size:1.1rem;font-weight:600;margin-bottom:.5rem}
+.insights-placeholder p{margin:0 0 .6rem}
+.insights-placeholder code{font-size:.85rem;background:var(--paper);border:var(--rule-1px);padding:.15rem .4rem}
+
+/* nav between case studies */
+.cs-nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-block:2rem;border-top:3px double var(--ink);margin-top:2rem}
+.cs-nav a{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--green);text-decoration:none;border-bottom:1px solid var(--green);padding-bottom:.2rem}
+.cs-nav a:hover{color:var(--green-deep);border-bottom-color:var(--green-deep)}
+
+/* footer */
+.site-footer{border-top:3px double var(--ink);padding-block:2.2rem;font-size:.8rem;color:var(--ink-soft)}
+.site-footer .inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem;align-items:center}
+.site-footer nav{display:flex;gap:1.4rem;flex-wrap:wrap}
+.site-footer a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:.1rem}
+.site-footer a:hover{color:var(--green);border-bottom-color:var(--green)}
+
+@media (max-width:820px){
+  .before-grid,.demo-grid,.impl-grid{grid-template-columns:1fr}
+  .header-nav .nav-link{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
