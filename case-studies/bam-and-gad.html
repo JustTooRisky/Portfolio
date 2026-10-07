@@ -35,11 +35,11 @@
     <div class="container">
       <p class="label eyebrow">Speculative redesign · Ikeja, Lagos</p>
       <h1>Bam &amp; Gad Solicitors: <em>five faces, one real biography</em></h1>
-      <p class="lede">Dr. Yemi Opemuti's record is the only one filled out, and you only see it after hovering over his photo. The redesigned counsel profile puts his authority above the fold on the bio page and gives every team member a structured, always-visible bio block.</p>
+      <p class="lede">Dr. Yemi Opemuti's record is the only one filled out, and you only see it after hovering over his photo. The redesigned counsel profile puts his authority above the fold on the bio page where a senior counsel's credentials belong.</p>
       <div class="meta"><span>Team page</span><span>5 lawyers · 1 bio published</span><span>17/19 Allen Ave, Ikeja</span></div>
       <div class="ctas">
-        <a class="btn btn-primary" href="#after">View live redesign ↗</a>
-        <a class="btn btn-ghost" href="https://www.bamandgadsolicitors.com.ng/" target="_blank" rel="noopener">View original site ↗</a>
+        <a class="btn btn-primary" href="assets/bam-gad-redesign/dr-yemi-bio.html" target="_blank" rel="noopener">View live redesign ↗</a>
+        <a class="btn btn-ghost" href="../index.html#work">Back to Work</a>
       </div>
     </div>
   </section>
@@ -51,7 +51,7 @@
       <p>Reference: public site at <a href="https://www.bamandgadsolicitors.com.ng/">bamandgadsolicitors.com.ng</a> (captured Aug 2026). The firm is a commercial practice at 17/19 Allen Avenue, Ikeja, handling corporate, maritime, finance, real estate, and immigration. The team page lists five lawyers but gives almost nothing to verify them.</p>
       <div class="before-grid">
         <figure class="before-shot">
-          <img src="../images/Levin-thumb.webp" alt="Before reference placeholder: Bam & Gad team page — five photos, no visible names, hover-only bio for Dr. Opemuti" width="1400" height="1000" loading="lazy">
+          <img src="../images/team_main.png" alt="Before: Bam & Gad Solicitors team page — five photos, no visible names, hover-only bio for Dr. Opemuti" width="1400" height="1000" loading="lazy">
           <figcaption><span>Before — bamandgadsolicitors.com.ng (Aug 2026)</span><span>Reference only</span></figcaption>
         </figure>
         <ol class="observations">
@@ -85,52 +85,18 @@
 
   <section class="cs-section" id="after">
     <div class="container">
-      <p class="label cs-kicker">After: interactive demo</p>
-      <h2>The rebuilt biography, <em>experienceable</em></h2>
-      <p>Below is the redesigned senior counsel page as it ships. The nav, credentials, matter clusters, and consultation form are live elements. Tab through them or resize to test the responsive behavior.</p>
+      <p class="label cs-kicker">After: the redesign</p>
+      <h2>The rebuilt biography</h2>
+      <p>The redesigned senior counsel profile: name, credentials, and authority above the fold. Practice areas grouped into clusters. One consultation CTA with matter-type triage.</p>
       <div class="after-demo">
-        <div class="demo-bar"><span><span class="dot"></span>Live redesign · Bam &amp; Gad Solicitors</span><span>Speculative · Team page</span></div>
+        <div class="demo-bar"><span><span class="dot"></span>Redesign · Bam &amp; Gad Solicitors</span><span>Speculative · Senior counsel bio</span></div>
         <div class="demo-body">
-          <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:start;margin-bottom:1.4rem">
-            <div>
-              <p class="label" style="color:var(--green);margin-bottom:.6rem">Lead Partner · Head of Commercial &amp; Corporate Practice</p>
-              <h3>Dr. Yemi Opemuti, <em>LL.B, B.L, LL.D (H.C.)</em></h3>
-              <p class="demo-lede">Strategic advisor to multinational investors, corporate boards, and high-growth enterprises across Nigeria and West Africa. 20+ years of unbroken legal practice in corporate, commercial, and international trade law.</p>
-              <div style="display:flex;flex-wrap:wrap;gap:.5rem 1rem;color:var(--ink-soft);font-size:.82rem;margin-bottom:1rem">
-                <span>Admitted 2000</span><span>·</span><span>Supreme Court of Nigeria</span><span>·</span><span>NBA #048264</span>
-              </div>
-              <a class="btn btn-primary" href="#consult">Request a consultation</a>
-            </div>
-            <figure style="background:var(--green-deep);color:var(--paper);aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;border-radius:2px;font-family:var(--display);font-size:1.4rem">
-              Portrait
-            </figure>
-          </div>
-          <div class="demo-grid">
-            <article class="demo-card">
-              <h4>Corporate &amp; Commercial</h4>
-              <p>Business formation, corporate restructurings, shareholder disputes, joint ventures, contract negotiation, and corporate governance compliance.</p>
-            </article>
-            <article class="demo-card">
-              <h4>Foreign Investment &amp; International Trade</h4>
-              <p>FDI structuring, NIPC registration, capital importation certificates, cross-border M&amp;A, and international commercial contracts.</p>
-            </article>
-            <article class="demo-card">
-              <h4>Advisory &amp; Disputes</h4>
-              <p>Maritime &amp; admiralty, IP protection, commercial real estate, employment law, and civil &amp; commercial litigation across all Nigerian courts.</p>
-            </article>
-            <article class="demo-card" id="consult">
-              <h4>Request a consultation</h4>
-              <p style="margin-bottom:.8rem">A short, guided form: name, matter type, urgency — so the firm triages in one pass.</p>
-              <form onsubmit="event.preventDefault(); this.querySelector('.form-status').hidden=false;" style="display:flex;flex-direction:column;gap:.6rem">
-                <label style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--ink-soft)">Matter type
-                  <select style="width:100%;margin-top:.3rem;padding:.5rem .6rem;border:var(--rule-1px);background:var(--paper);font:inherit">
-                    <option>Select…</option><option>Corporate / Commercial</option><option>Property / Real estate</option><option>Maritime / Shipping</option><option>Immigration</option>
-                  </select>
-                </label>
-                <button class="btn btn-primary" type="submit">Send enquiry</button>
-                <p class="form-status" hidden style="font-size:.85rem;color:var(--green)">Demo — no data sent. In production this posts to the firm's intake.</p>
-              </form>
-            </article>
+          <figure class="after-shot">
+            <img src="../images/bam-gad-redesign.png" alt="Redesigned Bam & Gad Solicitors senior counsel bio page" width="1400" height="1000" loading="lazy">
+          </figure>
+          <div class="demo-actions">
+            <a class="btn btn-primary" href="assets/bam-gad-redesign/dr-yemi-bio.html" target="_blank" rel="noopener">View live redesign ↗</a>
+            <a class="btn btn-ghost" href="../index.html#work">Back to Work</a>
           </div>
         </div>
       </div>

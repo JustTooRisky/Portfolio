@@ -69,6 +69,7 @@ a{color:inherit}
 .before-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.5rem,4vw,3rem);align-items:start;margin-top:1.4rem}
 .before-shot{border:var(--rule-1px);background:var(--paper-raised);padding:.6rem}
 .before-shot img{width:100%;height:auto;border:var(--rule-1px)}
+.after-shot img{width:100%;height:auto}
 .before-shot figcaption{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:.6rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .observations{list-style:none;display:flex;flex-direction:column;gap:1rem}
 .observations li{padding-left:1.4rem;position:relative;color:var(--ink-soft);max-width:62ch}

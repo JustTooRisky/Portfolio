@@ -27,7 +27,7 @@
   <div class="container">
     <div class="banner-spec">
       <span class="dot" aria-hidden="true"></span>
-      <p><strong>Speculative Redesign</strong>: an independent redesign concept based on the firm’s publicly available website (mymsolicitors.co.uk, captured Aug 2026). Not commissioned by or affiliated with MYM Law Solicitors LLP.</p>
+      <p><strong>Speculative Redesign</strong>: an independent redesign concept based on the firm's publicly available website (mymsolicitors.co.uk, captured Aug 2026). Not commissioned by or affiliated with MYM Law Solicitors LLP.</p>
     </div>
   </div>
 
@@ -39,7 +39,7 @@
       <div class="meta"><span>Homepage redesign</span><span>Slough · Gerrards Cross · London</span><span>417 reviews · 4.8 avg</span></div>
       <div class="ctas">
         <a class="btn btn-primary" href="#after">View live redesign ↗</a>
-        <a class="btn btn-ghost" href="https://www.mymsolicitors.co.uk/" target="_blank" rel="noopener">View original site ↗</a>
+        <a class="btn btn-ghost" href="../index.html#work">Back to work</a>
       </div>
     </div>
   </section>
@@ -51,13 +51,13 @@
       <p>Reference: <a href="https://www.mymsolicitors.co.uk/">mymsolicitors.co.uk</a> (captured Aug 2026). MYM is an SRA-regulated practice (SRA ID 8010908) with offices at 329–331 High Street, Slough SL1 1TX, plus Gerrards Cross and London. The site lists around 16 practice areas, from immigration and family to wills, probate, and employment, with walk-in and 24-hour emergency availability.</p>
       <div class="before-grid">
         <figure class="before-shot">
-          <img src="../images/Levin-thumb.webp" alt="Before reference placeholder: MYM current site, with a dense practice grid and fee-heavy pages" width="1400" height="1000" loading="lazy">
+          <img src="../images/mym-before.png" alt="Before reference: MYM current site, with a dense practice grid and fee-heavy pages" width="1400" height="1000" loading="lazy">
           <figcaption><span>Before: mymsolicitors.co.uk (Aug 2026)</span><span>Reference only</span></figcaption>
         </figure>
         <ol class="observations">
           <li><strong>Practice-area sprawl.</strong> 16+ areas rendered as a uniform tile grid, covering immigration, family, wills, and employment, without grouping or guidance; visitors scan but cannot prioritise.</li>
           <li><strong>Fee disclosure buried.</strong> Consultation £100 + VAT and detailed immigration fees (£500–£2500) are present but deep on dense pages with inconsistent formatting; the trust signal is hidden by presentation.</li>
-          <li><strong>Urgency fragmented.</strong> “Emergency / 24 Hours: 0203 1377751” and “Walk-in: 09:00–17:30” appear in multiple footers/banners but lack a single, scannable availability block near the CTA.</li>
+          <li><strong>Urgency fragmented.</strong> "Emergency / 24 Hours: 0203 1377751" and "Walk-in: 09:00–17:30" appear in multiple footers/banners but lack a single, scannable availability block near the CTA.</li>
           <li><strong>Performance cues.</strong> Heavy legacy tiles, repeated social-icon blocks, and unsized images create CLS risk; mobile requires excessive scrolling before any matter-type filter appears.</li>
           <li><strong>Accessibility gaps.</strong> Low-contrast white-on-image tiles and icon-only social links without accessible names, fixable with WCAG 2.1 AA defaults.</li>
         </ol>
@@ -70,12 +70,12 @@
       <p class="label cs-kicker">Approach</p>
       <h2>I wanted to make <em>clarity do the selling</em></h2>
       <div class="approach-quote">
-        <p><em>“I wanted to make practice areas scannable, reduce the fee-hunt, and make urgency (walk-in and 24-hour help) obvious without changing what MYM actually offers.”</em></p>
+        <p><em>"I wanted to make practice areas scannable, reduce the fee-hunt, and make urgency (walk-in and 24-hour help) obvious without changing what MYM actually offers."</em></p>
       </div>
       <ul class="approach-list">
         <li>Cluster 16 areas into four plain-English groups: Immigration &amp; Human Rights · Family &amp; Islamic Family · Wills, Probate &amp; Property · Employment &amp; Civil, each with a one-line scope and a single entry CTA.</li>
         <li>Surface fees honestly but cleanly: keep the £100 consultation and the published ranges, but set them in a legible rate table with VAT noted, not scattered paragraphs.</li>
-        <li>Single availability ribbon (Walk-in Mon–Fri 09:30–17:30 · Emergency 0203 1377751 · WhatsApp) pinned near the primary “Request a callback” action.</li>
+        <li>Single availability ribbon (Walk-in Mon–Fri 09:30–17:30 · Emergency 0203 1377751 · WhatsApp) pinned near the primary "Request a callback" action.</li>
         <li>Editorial restraint and performance budget: no grid of 16 heavy tiles, no duplicate footers, just semantic lists, explicit image sizes, and one accent green on paper.</li>
         <li>Insights section prepared for headless WordPress: posts fetched via <code>/wp-json/wp/v2/posts</code> so the firm can publish without touching markup.</li>
       </ul>
@@ -84,64 +84,20 @@
 
   <section class="cs-section" id="after">
     <div class="container">
-      <p class="label cs-kicker">After: interactive demo</p>
-      <h2>The rebuilt homepage, <em>experienceable</em></h2>
-      <p>Below is the redesigned MYM concept as it ships. Grouped practice areas, a legible rate reference, and a live callback request are all in place. The insights feed below is the deferred WordPress integration point.</p>
+      <p class="label cs-kicker">After: the redesign</p>
+      <h2>The rebuilt homepage, <em>clear and fast</em></h2>
+      <p>Four groups replace sixteen tiles. Fees surfaced honestly. Emergency number where the call sits.</p>
       <div class="after-demo">
-        <div class="demo-bar"><span><span class="dot"></span>Live redesign · MYM Solicitors LLP</span><span>Speculative · Homepage</span></div>
+        <div class="demo-bar"><span><span class="dot"></span>Redesign · MYM Solicitors LLP</span><span>Speculative · Homepage</span></div>
         <div class="demo-body">
-          <h3>Faster, clearer, <em>still MYM</em></h3>
-          <p class="demo-lede">Four groups replace sixteen tiles. Each group states scope and links to one matter intake; immigration remains £100 consultation, family covers civil &amp; Islamic divorce, wills replaces the hidden probate pages, and employment handles workplace disputes.</p>
-          <div class="demo-grid">
-            <article class="demo-card">
-              <h4>Immigration &amp; Human Rights</h4>
-              <p>Spouse, sponsor, fiancé, appeals, JR, bail, and asylum: consultation £100 + VAT (deducted if engaged).</p>
-              <a href="#callback" class="btn btn-ghost btn-small" style="margin-top:.7rem">Request callback</a>
-            </article>
-            <article class="demo-card">
-              <h4>Family &amp; Islamic Family</h4>
-              <p>Civil marriage, pre-nuptial, children, domestic abuse, financial orders, talaq/khula, maintenance.</p>
-              <a href="#callback" class="btn btn-ghost btn-small" style="margin-top:.7rem">Request callback</a>
-            </article>
-            <article class="demo-card">
-              <h4>Wills, Probate &amp; Property</h4>
-              <p>Wills &amp; probate, power of attorney, conveyancing, statutory declarations, commissioner for oaths.</p>
-              <a href="#callback" class="btn btn-ghost btn-small" style="margin-top:.7rem">Request callback</a>
-            </article>
-            <article class="demo-card">
-              <h4>Employment &amp; Civil</h4>
-              <p>Employment disputes, civil litigation, and landlord/tenant matters, with walk-in or out-of-hours by appointment.</p>
-              <a href="#callback" class="btn btn-ghost btn-small" style="margin-top:.7rem">Request callback</a>
-            </article>
-          </div>
-          <div style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;border:var(--rule-1px);background:var(--paper);padding:.9rem 1rem;margin-top:1rem">
-            <span style="font-size:.82rem;color:var(--ink-soft)"><strong style="color:var(--green);letter-spacing:.06em;text-transform:uppercase;font-size:.72rem">Availability</strong> · Walk-in Mon–Fri 09:30–17:30 · Emergency 0203 1377751 · WhatsApp 0203 1377751</span>
-            <a class="btn btn-primary btn-small" href="#callback">Emergency help</a>
-          </div>
-
-          <div id="callback" style="margin-top:1.6rem;border:var(--rule-1px);background:var(--paper);padding:1.2rem">
-            <h4 style="font-family:var(--display);font-weight:600;margin-bottom:.5rem">Request a callback</h4>
-            <p style="font-size:.9rem;color:var(--ink-soft);margin-bottom:.8rem">The firm replies within 24 hours. Select a matter so the right adviser calls back.</p>
-            <form onsubmit="event.preventDefault(); this.querySelector('.form-status').hidden=false;" style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
-              <label style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--ink-soft)">Matter
-                <select style="width:100%;margin-top:.3rem;padding:.5rem .6rem;border:var(--rule-1px);background:var(--paper);font:inherit"><option>Select…</option><option>Immigration</option><option>Family</option><option>Wills / Probate</option><option>Employment</option></select>
-              </label>
-              <label style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--ink-soft)">Phone
-                <input type="tel" placeholder="07…" style="width:100%;margin-top:.3rem;padding:.5rem .6rem;border:var(--rule-1px);background:var(--paper);font:inherit">
-              </label>
-              <button class="btn btn-primary" type="submit" style="grid-column:1/-1">Request callback</button>
-              <p class="form-status" hidden style="grid-column:1/-1;font-size:.85rem;color:var(--green)">Demo: no data sent. Production posts to MYM intake.</p>
-            </form>
+          <figure class="after-shot">
+            <img src="../images/mym-redesign.png" alt="MYM Solicitors homepage redesign" width="1280" height="914" loading="lazy">
+          </figure>
+          <div class="demo-actions">
+            <a class="btn btn-primary" href="https://www.mymsolicitors.co.uk/" target="_blank" rel="noopener">View original site ↗</a>
+            <a class="btn btn-ghost" href="../index.html#work">View Work</a>
           </div>
         </div>
-      </div>
-
-      <!-- WP headless: /wp-json/wp/v2/posts → fetch() deferred -->
-      <div class="insights-placeholder">
-        <h3>Homepage Insights: WordPress (headless) deferred</h3>
-        <p>When the MYM homepage demo goes live on Hostinger, WordPress runs as a standalone CMS on a subdomain (e.g., <code>content.graviodigital.com</code>). The homepage fetches posts via <code>fetch('/wp-json/wp/v2/posts?per_page=3')</code> and renders them in the homepage insights block, with no theme and no page builder.</p>
-        <p style="font-size:.85rem">Placeholder for three latest posts: title, excerpt, practice-area tag. If the API is unreachable, this block falls back to a static “Visit Insights →” link.</p>
-        <code>GET /wp-json/wp/v2/posts?_fields=title,excerpt,link,categories</code>
       </div>
     </div>
   </section>
@@ -172,7 +128,7 @@
           <ul>
             <li>Fees quoted verbatim: £100 + VAT consultation, immigration ranges £500–£2500 as published</li>
             <li>Offices listed as public: Slough SL1 1TX, Gerrards Cross, London W5 5SL; SRA ID 8010908 noted</li>
-            <li>No invented reviews: “417 reviews · 4.8” is the firm’s public count, not a new claim</li>
+            <li>No invented reviews: "417 reviews · 4.8" is the firm's public count, not a new claim</li>
           </ul>
         </div>
         <div class="impl-card">
@@ -198,7 +154,7 @@
 
   <nav class="cs-nav container" aria-label="Case study navigation">
     <a href="bam-and-gad.html">← Previous: Bam &amp; Gad</a>
-    <a href="iacobelli-law-firm.html">Next: Iacobelli Law Firm →</a>
+    <a href="gravio-digital.html">Next: Gravio Digital →</a>
   </nav>
 </main>
 
